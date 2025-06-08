@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid-State Lithium-Sulfur Batteries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #546e7a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            border-bottom: 3px solid #00695c;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #00695c;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #546e7a;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #00695c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00695c;
+        }
+        
+        .challenge {
+            background: #f8fffe;
+        }
+        
+        .how-it-works {
+            background: #fafafa;
+        }
+        
+        .components-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .component-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #00695c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .component-card h3 {
+            color: #00695c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .process-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #00695c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .process-card h3 {
+            color: #00695c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .case-studies {
+            background: #fff8e1;
+        }
+        
+        .case-study-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #00695c;
+        }
+        
+        .case-study-item h4 {
+            color: #00695c;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .benefits {
+            background: #e8f5e8;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-top: 4px solid #00695c;
+        }
+        
+        .benefit-item .icon {
+            font-size: 2em;
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-item h4 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .components-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔋 Solid-State Lithium-Sulfur Batteries</h1>
+            <p>Next-Generation High-Energy Density Storage</p>
+        </div>
+        
+        <div class="section challenge">
+            <h2>Challenge Addressed</h2>
+            <p>Achieving higher practical energy density and safety beyond current Li-ion batteries. Aiming to unlock the very high theoretical energy density of Li-S chemistry while improving safety by eliminating flammable liquid electrolytes. Potentially lowering long-term battery costs as sulfur is inexpensive and abundant.</p>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>Key Components</h2>
+            <div class="components-grid">
+                <div class="component-card">
+                    <h3>⚡ Lithium Metal Anode</h3>
+                    <p>Offers the highest possible specific capacity for maximum energy density.</p>
+                </div>
+                
+                <div class="component-card">
+                    <h3>🔬 Sulfur-based Cathode</h3>
+                    <p>Typically a composite of sulfur and conductive materials (e.g., porous carbons) to accommodate sulfur and facilitate reactions.</p>
+                </div>
+                
+                <div class="component-card">
+                    <h3>🛡️ Solid-State Electrolyte</h3>
+                    <p>A solid material (ceramic, solid polymer, glass, or composite) that conducts lithium ions while acting as a physical barrier to electrons and migrating polysulfide species.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>Working Principle</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <h3>🔋 Discharge</h3>
+                    <p>Lithium ions from the anode travel through the solid electrolyte to the cathode, where they react with sulfur to form lithium polysulfides (Li₂Sₓ) and ultimately lithium sulfide (Li₂S).</p>
+                </div>
+                
+                <div class="process-card">
+                    <h3>🔌 Charge</h3>
+                    <p>An external voltage reverses the process, breaking down the lithium sulfides/polysulfides, releasing lithium ions that travel back through the solid electrolyte and re-plate as lithium metal on the anode.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section benefits">
+            <h2>Key Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">⚡</div>
+                    <h4>High Energy Density</h4>
+                    <p>Theoretical energy density far exceeds conventional Li-ion</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Enhanced Safety</h4>
+                    <p>Solid electrolyte eliminates flammable liquid components</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">💰</div>
+                    <h4>Cost-Effective</h4>
+                    <p>Sulfur is abundant and inexpensive compared to other cathode materials</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🌍</div>
+                    <h4>Environmental</h4>
+                    <p>Utilizes earth-abundant sulfur reducing resource constraints</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section case-studies">
+            <h2>Leading Developments</h2>
+            
+            <div class="case-study-item">
+                <h4>🚀 Lyten (USA)</h4>
+                <p>While primarily focused on their 3D Graphene-enhanced Lithium-Sulfur batteries which might use advanced liquid or quasi-solid electrolytes, Lyten's progress towards higher energy density and safety is notable. They have been shipping sample cells for customer evaluation in various sectors (including aerospace and automotive) in the 2024-2025 timeframe and scaling pilot production.</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🔬 Solidion Technology (USA)</h4>
+                <p>This company has reported advancements in developing high-energy, safe solid-state batteries, including those based on Li-S chemistry, using polymer-based or composite electrolytes. They have highlighted prototypes and target applications in aerospace and EV. Specific grid-scale case studies are likely still in very early stages or internal R&D.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

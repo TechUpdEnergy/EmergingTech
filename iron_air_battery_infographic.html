@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron-Air Battery Technology</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #546e7a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            border-bottom: 3px solid #00695c;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #00695c;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #546e7a;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #00695c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00695c;
+        }
+        
+        .how-it-works {
+            background: #f8fffe;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .process-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #00695c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .process-card h3 {
+            color: #00695c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .process-card .equation {
+            background: #e0f2f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 15px 0;
+            color: #00695c;
+            font-weight: 600;
+        }
+        
+        .components {
+            background: #fafafa;
+        }
+        
+        .component-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .component-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #00695c;
+        }
+        
+        .component-icon {
+            font-size: 2.5em;
+            color: #00695c;
+            min-width: 60px;
+            text-align: center;
+        }
+        
+        .component-content h4 {
+            color: #00695c;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        
+        .benefits {
+            background: #e8f5e8;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-top: 4px solid #00695c;
+        }
+        
+        .benefit-item .icon {
+            font-size: 2em;
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .case-studies {
+            background: #fff8e1;
+        }
+        
+        .case-study-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #00695c;
+        }
+        
+        .case-study-item h4 {
+            color: #00695c;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #e0f2f1;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00695c;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #546e7a;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .component-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ Iron-Air Batteries</h1>
+            <p>Long-Duration Energy Storage Through Reversible Rusting</p>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>How It Works</h2>
+            <p>Iron-air batteries operate on the principle of <strong>reversible rusting</strong> (oxidation and reduction of iron), providing a cost-effective solution for long-duration energy storage that traditional lithium-ion batteries cannot economically manage.</p>
+            
+            <div class="process-grid">
+                <div class="process-card">
+                    <h3>🔋 Discharging</h3>
+                    <p>Iron metal reacts with oxygen from ambient air in the presence of a water-based electrolyte to form iron oxide (rust), releasing electrons and generating electricity.</p>
+                    <div class="equation">Fe + O₂ + H₂O → Fe₂O₃ + e⁻</div>
+                </div>
+                
+                <div class="process-card">
+                    <h3>🔌 Charging</h3>
+                    <p>An electrical current reverses the process, converting iron oxide back into metallic iron and releasing oxygen back into the atmosphere.</p>
+                    <div class="equation">Fe₂O₃ + e⁻ → Fe + O₂</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section components">
+            <h2>Core Components</h2>
+            <div class="component-list">
+                <div class="component-item">
+                    <div class="component-icon">🔩</div>
+                    <div class="component-content">
+                        <h4>Iron Electrodes</h4>
+                        <p>Metallic iron serves as the active material that undergoes oxidation and reduction during battery operation.</p>
+                    </div>
+                </div>
+                
+                <div class="component-item">
+                    <div class="component-icon">💨</div>
+                    <div class="component-content">
+                        <h4>Air Electrodes</h4>
+                        <p>Facilitate the oxygen reaction, allowing air to enter and exit the battery system during operation.</p>
+                    </div>
+                </div>
+                
+                <div class="component-item">
+                    <div class="component-icon">💧</div>
+                    <div class="component-content">
+                        <h4>Aqueous Electrolyte</h4>
+                        <p>Water-based electrolyte solution that enables ion transport between electrodes during charging and discharging.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section benefits">
+            <h2>Key Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">🔄</div>
+                    <h4>Many Cycles</h4>
+                    <p>Designed for thousands of charge-discharge cycles</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">⏰</div>
+                    <h4>Long Lifespan</h4>
+                    <p>Extended operational life with minimal degradation</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🌍</div>
+                    <h4>Eco-Friendly</h4>
+                    <p>Uses abundant iron and air - environmentally sustainable</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">💰</div>
+                    <h4>Cost-Effective</h4>
+                    <p>Iron is inexpensive and widely available worldwide</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section case-studies">
+            <h2>Real-World Deployments</h2>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">10 MW</div>
+                    <div class="stat-label">Minnesota Project Capacity</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1,000 MWh</div>
+                    <div class="stat-label">Energy Storage Capacity</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3,073 MW</div>
+                    <div class="stat-label">PacifiCorp Target by 2045</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100 hrs</div>
+                    <div class="stat-label">Duration Capability</div>
+                </div>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🏭 Form Energy & Xcel Energy (Minnesota, USA)</h4>
+                <p>10 MW / 1,000 MWh iron-air battery system at a retiring coal plant in Becker, Minnesota. Expected operational by end of 2025, demonstrating multi-day storage capability.</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>⚡ Form Energy & Georgia Power (Georgia, USA)</h4>
+                <p>15 MW / 1,500 MWh iron-air battery project planned to support grid reliability and renewable energy integration.</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🔌 Form Energy & PacifiCorp (Western USA)</h4>
+                <p>Massive deployment plan with 605 MW by 2032 and up to 3,073 MW by 2045, featuring 100-hour duration storage capability.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Temperature Superconductor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #546e7a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            border-bottom: 3px solid #00695c;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #00695c;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #546e7a;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #00695c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00695c;
+        }
+        
+        .challenge {
+            background: #f8fffe;
+        }
+        
+        .how-it-works {
+            background: #fafafa;
+        }
+        
+        .applications {
+            background: #e8f5e8;
+        }
+        
+        .temperature-highlight {
+            background: #e0f2f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: #00695c;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+        
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .application-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #00695c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .application-card h3 {
+            color: #00695c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-top: 4px solid #00695c;
+        }
+        
+        .benefit-item .icon {
+            font-size: 2em;
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-item h4 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .case-studies {
+            background: #fff8e1;
+        }
+        
+        .case-study-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #00695c;
+        }
+        
+        .case-study-item h4 {
+            color: #00695c;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .applications-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>❄️ High-Temperature Superconductor</h1>
+            <p>Zero-Resistance Power Transmission Technology</p>
+        </div>
+        
+        <div class="section challenge">
+            <h2>Challenge Addressed</h2>
+            <p>High electrical losses in conventional conductors - resistive losses in copper and aluminium cables lead to significant energy waste. In dense urban areas, it's difficult to install enough conventional cables to meet growing demand due to space limitations. High fault currents in modern grids can damage equipment and cause instability.</p>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>How It Works</h2>
+            <p>High-Temperature Superconductors (HTSC) are materials that exhibit zero electrical resistance and expel magnetic fields when cooled below a critical temperature. "High temperature" is relative to traditional low-temperature superconductors and typically means they can operate at temperatures achievable with liquid nitrogen.</p>
+            
+            <div class="temperature-highlight">
+                Operating Temperature: 77 K (-196°C)
+                <br>Using Liquid Nitrogen Cooling
+            </div>
+        </div>
+        
+        <div class="section applications">
+            <h2>Key Applications</h2>
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h3>🔌 HTSC Cables</h3>
+                    <p>Use HTSC wires (commonly REBCO or BSCCO) surrounded by cryogenic cooling system. Can carry 3-10 times more current than conventional cables of the same size with virtually no losses.</p>
+                </div>
+                
+                <div class="application-card">
+                    <h3>⚡ HTSC Fault Current Limiters</h3>
+                    <p>Allow normal current to pass with no resistance. During faults, they rapidly transition to resistive state, inserting impedance to limit fault current and protect equipment.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>Key Advantages</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">⚡</div>
+                    <h4>Zero Resistance</h4>
+                    <p>Eliminates electrical losses during power transmission</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🏙️</div>
+                    <h4>High Capacity</h4>
+                    <p>3-10x more current capacity in same cable size</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Fault Protection</h4>
+                    <p>Rapid fault current limiting capability</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🌆</div>
+                    <h4>Urban Solution</h4>
+                    <p>Ideal for space-constrained dense urban areas</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section case-studies">
+            <h2>Real-World Deployments</h2>
+            
+            <div class="case-study-item">
+                <h4>🇩🇪 AmpaCity Project (Essen, Germany)</h4>
+                <p>One of the world's longest HTSC cable systems (1 km, 10 kV) connecting two substations, operational since 2014, demonstrating long-term reliability for urban power supply. Developed by Nexans and RWE.</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🇺🇸 Long Island Power Authority (LIPA) HTSC Cable Project</h4>
+                <p>A 138 kV, 600-meter HTSC cable system installed in LIPA's grid around 2008, one of the earliest transmission-level projects.</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🇰🇷 Shingal HTSC Project (South Korea)</h4>
+                <p>KEPCO has been very active, deploying several HTSC cables in its grid, including a 23 kV distribution cable and projects at higher voltage levels, aiming for commercialization and network expansion. A 1 km, 154 kV HTSC cable was planned for operation.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

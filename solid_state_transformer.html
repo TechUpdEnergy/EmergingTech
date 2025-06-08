@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solid-State Transformer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #546e7a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            border-bottom: 3px solid #00695c;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #00695c;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #546e7a;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #00695c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00695c;
+        }
+        
+        .challenge {
+            background: #f8fffe;
+        }
+        
+        .how-it-works {
+            background: #fafafa;
+        }
+        
+        .conversion-stages {
+            background: #e8f5e8;
+        }
+        
+        .stages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .stage-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid #00695c;
+            text-align: center;
+        }
+        
+        .stage-card .number {
+            background: #00695c;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+        
+        .stage-card h3 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .control-highlight {
+            background: #e0f2f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: #00695c;
+            margin: 20px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-top: 4px solid #00695c;
+        }
+        
+        .benefit-item .icon {
+            font-size: 2em;
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-item h4 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .case-studies {
+            background: #fff8e1;
+        }
+        
+        .case-study-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #00695c;
+        }
+        
+        .case-study-item h4 {
+            color: #00695c;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .stages-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔄 Solid-State Transformer</h1>
+            <p>Advanced Power Electronic Transformation Technology</p>
+        </div>
+        
+        <div class="section challenge">
+            <h2>Problems Being Addressed</h2>
+            <p>Facilitating the seamless connection of DC sources (like solar PV, batteries, EV chargers) and AC loads/grids operating at different voltage and frequency levels. Power quality issues: Mitigating voltage sags/swells, harmonics, and power factor issues in distribution networks.</p>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>How It Works</h2>
+            <p>A Solid-State Transformer (SST), also known as a Power Electronic Transformer (PET), replaces the traditional copper-and-iron core transformer with a system based on power electronics converters and a high-frequency transformer.</p>
+            
+            <div class="control-highlight">
+                Advanced control systems manage power electronic switches<br>
+                (like SiC or GaN MOSFETs/IGBTs) for precise operation
+            </div>
+        </div>
+        
+        <div class="section conversion-stages">
+            <h2>Multi-Stage Conversion Process</h2>
+            <div class="stages-grid">
+                <div class="stage-card">
+                    <div class="number">1</div>
+                    <h3>AC to DC</h3>
+                    <p>Rectification of input AC power to DC</p>
+                </div>
+                
+                <div class="stage-card">
+                    <div class="number">2</div>
+                    <h3>High-Frequency Isolation</h3>
+                    <p>High-frequency transformer provides isolation and voltage transformation</p>
+                </div>
+                
+                <div class="stage-card">
+                    <div class="number">3</div>
+                    <h3>High-Frequency AC to DC</h3>
+                    <p>Rectification of high-frequency AC output</p>
+                </div>
+                
+                <div class="stage-card">
+                    <div class="number">4</div>
+                    <h3>DC to AC Inversion</h3>
+                    <p>Conversion to final AC output (if AC output needed)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>Key Advantages</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">🔌</div>
+                    <h4>Multi-Port Capability</h4>
+                    <p>Seamlessly connects AC and DC sources at different voltage levels</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">📊</div>
+                    <h4>Voltage Regulation</h4>
+                    <p>Precise voltage control and power quality improvement</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">⚡</div>
+                    <h4>Power Flow Control</h4>
+                    <p>Bidirectional power flow management</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Fault Management</h4>
+                    <p>Advanced protection and fault isolation capabilities</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section case-studies">
+            <h2>Research and Development</h2>
+            
+            <div class="case-study-item">
+                <h4>🏫 EPRI and FREEDM Systems Centre (North Carolina State University, USA)</h4>
+                <p>Have been involved in numerous research and pilot projects demonstrating SST functionalities for grid applications, including integration with renewables and microgrids. Specific utility pilot projects are emerging. For example, research and development projects have been supported by the US Department of Energy (DOE).</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🇪🇺 Hitachi Energy</h4>
+                <p>Has participated in European Union-funded projects (such as MegaFlex, MAGALOOP, and PROMOTION) exploring SSTs for HVDC, Microgrids, and traction applications.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

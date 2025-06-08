@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Batteries</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #546e7a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            border-bottom: 3px solid #00695c;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #00695c;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #546e7a;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #00695c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00695c;
+        }
+        
+        .challenge {
+            background: #f8fffe;
+        }
+        
+        .how-it-works {
+            background: #fafafa;
+        }
+        
+        .components-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .component-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #00695c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .component-card h3 {
+            color: #00695c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .process-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #00695c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .process-card h3 {
+            color: #00695c;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+        
+        .chemistry-section {
+            background: #e8f5e8;
+        }
+        
+        .chemistry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .chemistry-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-top: 4px solid #00695c;
+        }
+        
+        .chemistry-item h4 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .case-studies {
+            background: #fff8e1;
+        }
+        
+        .case-study-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #00695c;
+        }
+        
+        .case-study-item h4 {
+            color: #00695c;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #e0f2f1;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #00695c;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #546e7a;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .process-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .components-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .chemistry-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ Flow Batteries</h1>
+            <p>Scalable Long-Duration Energy Storage</p>
+        </div>
+        
+        <div class="section challenge">
+            <h2>Challenge Addressed</h2>
+            <p>Addressing the need for long-duration energy storage solutions that can discharge for extended periods (typically 4 to 12+ hours, or even multi-day), which is crucial for managing the intermittency of renewable energy sources over daily or longer cycles.</p>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>Key Components</h2>
+            <div class="components-grid">
+                <div class="component-card">
+                    <h3>🏗️ Electrolyte Tanks</h3>
+                    <p>External storage tanks containing liquid electrolytes that determine the energy capacity based on volume.</p>
+                </div>
+                
+                <div class="component-card">
+                    <h3>⚡ Electrochemical Cell Stack</h3>
+                    <p>Where the actual electrochemical reactions occur, determining the power capacity based on size and number of cells.</p>
+                </div>
+                
+                <div class="component-card">
+                    <h3>🎛️ Power Control System</h3>
+                    <p>Manages the flow of electrolytes and controls the charge/discharge process with high precision.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>Operation Process</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <h3>🔋 Charging</h3>
+                    <p>Electricity drives electrochemical reactions in the cell stack, changing the oxidation state of electroactive species. The "charged" electrolytes are stored in tanks.</p>
+                </div>
+                
+                <div class="process-card">
+                    <h3>⚡ Discharging</h3>
+                    <p>Charged electrolytes are pumped through the cell stack where reverse electrochemical reactions occur, releasing electricity back to the grid.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section chemistry-section">
+            <h2>Common Chemistries</h2>
+            <div class="chemistry-grid">
+                <div class="chemistry-item">
+                    <h4>Vanadium Redox (VRFB)</h4>
+                    <p>Uses vanadium ions in different oxidation states. Most mature and widely deployed type.</p>
+                </div>
+                
+                <div class="chemistry-item">
+                    <h4>Zinc-based</h4>
+                    <p>Utilizes zinc chemistry for cost-effective long-duration storage applications.</p>
+                </div>
+                
+                <div class="chemistry-item">
+                    <h4>Iron-based</h4>
+                    <p>Employs abundant iron materials for sustainable energy storage solutions.</p>
+                </div>
+                
+                <div class="chemistry-item">
+                    <h4>Organic Flow</h4>
+                    <p>Uses organic molecules for environmentally friendly storage systems.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section case-studies">
+            <h2>Major Deployments</h2>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">200 MW</div>
+                    <div class="stat-label">Dalian Capacity</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">800 MWh</div>
+                    <div class="stat-label">Energy Storage</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2022</div>
+                    <div class="stat-label">Grid Connected</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">GWh</div>
+                    <div class="stat-label">Future Scale</div>
+                </div>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🏭 Dalian Flow Battery Energy Storage (China)</h4>
+                <p>One of the world's largest flow battery projects, a 100 MW/400 MWh Vanadium Redox Flow Battery system was connected to the grid in Dalian, China, in 2022, with plans to expand to 200 MW/800 MWh. It's a major demonstration of grid-scale VRFB capability.</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>⚡ ESS Inc. Iron Flow Battery Deployments (USA & Global)</h4>
+                <p>ESS Inc. manufactures iron flow batteries for long-duration storage. They have deployed systems with various utilities and C&I customers, including a project with San Diego Gas & Electric (SDG&E) and a notable project in Burbank, California (commissioning celebration in April 2024). In early 2025, ESS Inc. reported focusing on its "Energy Base" product for GWh-scale LDES opportunities, expecting revenues from this to ramp up from 2026.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronous Condenser</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #546e7a;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            border-bottom: 3px solid #00695c;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #00695c;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            color: #546e7a;
+            font-weight: 500;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #00695c;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #00695c;
+        }
+        
+        .challenge {
+            background: #f8fffe;
+        }
+        
+        .how-it-works {
+            background: #fafafa;
+        }
+        
+        .functions {
+            background: #e8f5e8;
+        }
+        
+        .functions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        
+        .function-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #00695c;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .function-card .icon {
+            font-size: 2.5em;
+            color: #00695c;
+            margin-bottom: 15px;
+            text-align: center;
+            display: block;
+        }
+        
+        .function-card h3 {
+            color: #00695c;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .inertia-highlight {
+            background: #e0f2f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            color: #00695c;
+            margin: 20px 0;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-top: 4px solid #00695c;
+        }
+        
+        .benefit-item .icon {
+            font-size: 2em;
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .benefit-item h4 {
+            color: #00695c;
+            margin-bottom: 10px;
+        }
+        
+        .case-studies {
+            background: #fff8e1;
+        }
+        
+        .case-study-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            border-left: 4px solid #00695c;
+        }
+        
+        .case-study-item h4 {
+            color: #00695c;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .functions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚙️ Synchronous Condenser</h1>
+            <p>Mechanical Inertia and Reactive Power Support</p>
+        </div>
+        
+        <div class="section challenge">
+            <h2>Challenge Addressed</h2>
+            <p>The retirement of traditional synchronous generators (coal, gas, nuclear) and the increasing penetration of Inverter-Based Resources (IBR) like solar, wind, and batteries reduce the overall rotational inertia in the power system. Low inertia makes the grid more susceptible to rapid frequency deviations (high Rate of Change of Frequency - RoCoF) and instability during disturbances.</p>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>How It Works</h2>
+            <p>A synchronous condenser (also known as a synchronous compensator or SynCon) is essentially a large synchronous generator that operates without a prime mover (like a turbine) and is not connected to any load to produce net active power.</p>
+            
+            <div class="inertia-highlight">
+                Its rotor is brought up to synchronous speed with the grid,<br>
+                typically by a pony motor or static frequency converter (SFC)
+            </div>
+            
+            <p>Modern synchronous condensers are often equipped with advanced digital control systems and can sometimes be coupled with flywheels to further augment their inertial response.</p>
+        </div>
+        
+        <div class="section functions">
+            <h2>Key Functions</h2>
+            <div class="functions-grid">
+                <div class="function-card">
+                    <div class="icon">🔄</div>
+                    <h3>Reactive Power Control</h3>
+                    <p>By adjusting the DC excitation current in its rotor field winding, a synchronous condenser can either generate reactive power (when over-excited, acting like a capacitor) or absorb reactive power (when under-excited, acting like a reactor). This allows for dynamic voltage regulation on the transmission grid.</p>
+                </div>
+                
+                <div class="function-card">
+                    <div class="icon">⚖️</div>
+                    <h3>Inertia Provision</h3>
+                    <p>The significant rotating mass of its rotor, spinning in synchrony with the grid, provides physical (mechanical) inertia. This inertia naturally resists changes in grid frequency, helping to slow down RoCoF during sudden generation/load imbalances and giving other control systems more time to react.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section how-it-works">
+            <h2>Key Benefits</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="icon">📊</div>
+                    <h4>Voltage Support</h4>
+                    <p>Dynamic reactive power control for voltage regulation</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">⚖️</div>
+                    <h4>Physical Inertia</h4>
+                    <p>Mechanical inertia that naturally stabilizes frequency</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🛡️</div>
+                    <h4>Grid Strength</h4>
+                    <p>Improves overall system strength and stability</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="icon">🔧</div>
+                    <h4>Proven Technology</h4>
+                    <p>Mature, reliable technology with long operational history</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section case-studies">
+            <h2>Real-World Deployments</h2>
+            
+            <div class="case-study-item">
+                <h4>🇬🇧 National Grid ESO (UK) - Stability Pathfinder Projects</h4>
+                <p>To address declining inertia and system strength, National Grid ESO has contracted with several providers for synchronous condenser services. For example, Siemens Energy has commissioned synchronous condensers at locations like Rassau, Wales (operational around 2023-2024) to provide these critical grid services. Ansaldo Energia also secured contracts for multiple units in Italy, with some featuring flywheel systems, highlighted in early 2025.</p>
+            </div>
+            
+            <div class="case-study-item">
+                <h4>🇦🇺 Transgrid (Australia)</h4>
+                <p>In New South Wales, Transgrid is installing synchronous condensers (e.g., at Darlington Point and other locations) to manage system strength and inertia as coal plants retire and renewable penetration increases. These projects were actively being developed and commissioned in the 2023-2025 timeframe.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
